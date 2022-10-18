@@ -67,7 +67,6 @@ function loadPlaces(position) {
         },
         {
             name: 'Office',
-            href: 'http://www.djad.in/',  
             location: {
                 lat: 10.904267887588869, 
                 lng: 76.97016781047577
