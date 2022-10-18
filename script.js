@@ -200,7 +200,7 @@ window.onload = () => {
                 const latitude = place.location.lat;
                 const longitude = place.location.lng;
 
-                //alert(place.name);
+                alert(place.name);
 
                 // add place name
                 const placeText = document.createElement('a-link');
