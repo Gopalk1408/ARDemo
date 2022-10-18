@@ -43,15 +43,15 @@ function loadPlaces(position) {
                 lat: 10.904713789582376, 
                 lng: 76.96997162837401
             },
-            name: 'Office',  
-            location: {
-                lat: 10.904267887588869, 
-                lng: 76.97016781047577
-            },
             name: 'Hostel',  
             location: {
                 lat: 10.90421390245723, 
                 lng: 76.97005392795391
+            },
+            name: 'Office',  
+            location: {
+                lat: 10.904267887588869, 
+                lng: 76.97016781047577
             },
         },
     ];
