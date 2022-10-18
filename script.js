@@ -66,7 +66,8 @@ function loadPlaces(position) {
             },
         },
         {
-            name: 'Office',  
+            name: 'Office',
+            href: 'http://www.djad.in/',  
             location: {
                 lat: 10.904267887588869, 
                 lng: 76.97016781047577
@@ -206,7 +207,9 @@ window.onload = () => {
                 const placeText = document.createElement('a-link');
                 placeText.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                 placeText.setAttribute('title', place.name);
-                placeText.setAttribute('scale', '5 5 5');
+                placeText.setAttribute('href', 'http://cognida.ai/');
+                placeText.setAttribute('scale', '10 10 10');
+                placeText.setAttribute('img', '/images/clock.png');
                 
                 placeText.addEventListener('loaded', () => {
                     window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
@@ -223,3 +226,26 @@ window.onload = () => {
         }
     );
 };
+
+const clickListener = function (ev) {
+    ev.stopPropagation();
+    ev.preventDefault();
+
+    const name = ev.target.getAttribute('name');
+    const el = ev.detail.intersection && ev.detail.intersection.object.el;
+
+    if (el && el === ev.target) {
+        // after click, we are adding a label with the name of the place
+        const label = document.createElement('span');
+        const container = document.createElement('div');
+        container.setAttribute('id', 'place-label');
+        label.innerText = name;
+        container.appendChild(label);
+        document.body.appendChild(container);
+
+        setTimeout(() => {
+            // that will disappear after less than 2 seconds
+            container.parentElement.removeChild(container);
+        }, 1500);
+     }
+ };
