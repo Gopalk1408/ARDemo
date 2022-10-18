@@ -208,8 +208,8 @@ window.onload = () => {
                 placeText.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                 placeText.setAttribute('title', place.name);
                 placeText.setAttribute('href', 'http://cognida.ai/');
-                placeText.setAttribute('scale', '10 10 10');
-                placeText.setAttribute('img', '/images/clock.png');
+                placeText.setAttribute('scale', '15 15 15');
+
                 
                 placeText.addEventListener('loaded', () => {
                     window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
