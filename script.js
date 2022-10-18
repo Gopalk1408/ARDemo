@@ -3,7 +3,7 @@
 function loadPlaces(position) {
     return [
         {
-         name: 'Villa 177',  
+            name: 'Villa 177',  
             location: {
                 lat: 10.904797481042223,
                 lng: 76.96982338078661
@@ -57,6 +57,7 @@ function loadPlaces(position) {
     ];
 };
 
+
 function loadFSPlaces(position) {
     const params = {
         radius: 300,    // search places not farther than this value (in meters)
@@ -95,25 +96,23 @@ window.onload = () => {
     return navigator.geolocation.getCurrentPosition(function (position) {
 
         // than use it to load from remote APIs some places nearby
-        loadPlaces(position.coords)
-            .then((places) => {
-                places.forEach((place) => {
-                    const latitude = place.location.lat;
-                    const longitude = place.location.lng;
+        let places = loadPlaces(position.coords)
+        places.forEach((place) => {
+            const latitude = place.location.lat;
+            const longitude = place.location.lng;
 
-                    // add place name
-                    const placeText = document.createElement('a-link');
-                    placeText.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-                    placeText.setAttribute('title', place.name);
-                    placeText.setAttribute('scale', '15 15 15');
-                    
-                    placeText.addEventListener('loaded', () => {
-                        window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-                    });
+            // add place name
+            const placeText = document.createElement('a-link');
+            placeText.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+            placeText.setAttribute('title', place.name);
+            placeText.setAttribute('scale', '15 15 15');
+            
+            placeText.addEventListener('loaded', () => {
+                window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+            });
 
-                    scene.appendChild(placeText);
-                });
-            })
+            scene.appendChild(placeText);
+        });
     },
         (err) => console.error('Error in retrieving position', err),
         {
