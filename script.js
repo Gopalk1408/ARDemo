@@ -2,10 +2,10 @@
 function loadPlaces(position) {
     return [
         {
-            name: 'Villa 177',  
+            name: 'Garden',  
             location: {
-                lat: 10.904797481042223,
-                lng: 76.96982338078661
+                lat: 10.90426806753599, 
+                lng: 76.97075933151562
             },
         },
         {
@@ -16,38 +16,31 @@ function loadPlaces(position) {
             },
         },
         {
-            name: 'Villa 122',  
+            name: 'Badminton',  
             location: {
-                lat: 10.904941444387129, 
-                lng: 76.96977882261955
+                lat: 10.903886169093484,  
+                lng: 76.97017997439947
             },
         },
         {
-            name: 'Villa 111',  
+            name: 'Worker Areas',  
             location: {
-                lat: 10.904893471606636, 
-                lng: 76.96969312735844
+                lat: 10.905116143702928,  
+                lng: 76.96946650683977
             },
         },
         {
-            name: 'Villa 156',  
+            name: 'Villa U/C',  
             location: {
-                lat: 10.90484707021516, 
-                lng: 76.9695654391672
+                lat: 10.90487647024874,  
+                lng: 76.97050183946399
             },
         },
         {
             name: 'Restaurant',  
             location: {
-                lat: 10.904779936274256, 
-                lng: 76.96969011110195
-            },
-        },
-        {
-            name: 'Canteen',  
-            location: {
-                lat: 10.904851019270032, 
-                lng: 76.96993040620204
+                lat: 10.904262799974605,  
+                lng: 76.96969181238491
             },
         },
         {
@@ -58,17 +51,17 @@ function loadPlaces(position) {
             },
         },
         {
-            name: 'Hostel',  
+            name: 'Security',  
             location: {
-                lat: 10.90421390245723, 
-                lng: 76.97005392795391
+                lat: 10.90320799072564,  
+                lng: 76.96978879139236
             },
         },
         {
             name: 'Office',  
             location: {
-                lat: 10.904267887588869, 
-                lng: 76.97016781047577
+                lat: 10.903546410756588,  
+                lng: 76.96963280378976
             },
         },
     ];
