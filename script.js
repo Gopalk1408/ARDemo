@@ -96,25 +96,27 @@ window.onload = () => {
     return navigator.geolocation.getCurrentPosition(function (position) {
 
         // than use it to load from remote APIs some places nearby
-        let places = loadPlaces(position.coords)
-        places.forEach((place) => {
-            const latitude = place.location.lat;
-            const longitude = place.location.lng;
+        loadPlaces(position.coords)
+            .then((places) => {
+                places.forEach((place) => {
+                    const latitude = place.location.lat;
+                    const longitude = place.location.lng;
 
-            alert(place.name);
+                    alert(place.name);
 
-            // add place name
-            const placeText = document.createElement('a-link');
-            placeText.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-            placeText.setAttribute('title', place.name);
-            placeText.setAttribute('scale', '5 5 5');
-            
-            placeText.addEventListener('loaded', () => {
-                window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-            });
+                    // add place name
+                    const placeText = document.createElement('a-link');
+                    placeText.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+                    placeText.setAttribute('title', place.name);
+                    placeText.setAttribute('scale', '5 5 5');
+                    
+                    placeText.addEventListener('loaded', () => {
+                        window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+                    });
 
-            scene.appendChild(placeText);
-        });
+                    scene.appendChild(placeText);
+                });
+            })
     },
         (err) => console.error('Error in retrieving position', err),
         {
