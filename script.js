@@ -3,7 +3,7 @@ function loadPlaces(position) {
     return [
         {
             name: 'Garden',
-            icon: '/images/arch.png',  
+            icon: '../images/arch.png',  
             location: {
                 lat: 10.90426806753599, 
                 lng: 76.97075933151562
@@ -11,7 +11,7 @@ function loadPlaces(position) {
         },
         {
                 name: 'Villa 143',  
-                icon: '/images/arch.png',  
+                icon: '../images/arch.png',  
                 location: {
                 lat: 10.904950618519505, 
                 lng: 76.96988087519571
@@ -19,7 +19,7 @@ function loadPlaces(position) {
         },
         {
             name: 'Badminton',  
-            icon: '/images/arch.png', 
+            icon: '../images/arch.png', 
             location: {
                 lat: 10.903886169093484,  
                 lng: 76.97017997439947
@@ -27,7 +27,7 @@ function loadPlaces(position) {
         },
         {
             name: 'Worker Areas',  
-            icon: '/images/arch.png', 
+            icon: '../images/arch.png', 
             location: {
                 lat: 10.905116143702928,  
                 lng: 76.96946650683977
@@ -35,7 +35,7 @@ function loadPlaces(position) {
         },
         {
             name: 'Villa U/C',  
-            icon: '/images/arch.png', 
+            icon: '../images/arch.png', 
             location: {
                 lat: 10.90487647024874,  
                 lng: 76.97050183946399
