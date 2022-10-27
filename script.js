@@ -182,7 +182,7 @@ window.onload = () => {
                 //alert(place.name);
 
                 // add place name
-                const placeText = document.createElement('a-link');
+                const placeText = document.createElement('a-image');
                 placeText.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                 placeText.setAttribute('title', place.name);
                 placeText.setAttribute('src', place.icon);
