@@ -15,21 +15,17 @@
 </head>
 
 <body style='margin: 0; overflow: hidden;'>
-    <div class="Left">
+    <a-scene 
+        vr-mode-ui='enabled: false' 
+        embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-camera gps-camera="minDistance: 15;" rotation-reader></a-camera>
         <button data-action="">Buy</button>
-    </div>
-    <div class="Right">
         <button.soundbtn data-action="">
             <audio>
                 <source src="horse.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
             </audio>
         </button>
-    </div>
-    <a-scene 
-        vr-mode-ui='enabled: false' 
-        embedded
-        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <a-camera gps-camera="minDistance: 15;" rotation-reader></a-camera>
     </a-scene>
 </body>
