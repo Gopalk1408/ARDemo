@@ -2,7 +2,7 @@
 function loadPlaces(position) {
     return [
         {
-            name: 'Garden',
+            name: 'Garden',  
             location: {
                 lat: 10.90426806753599, 
                 lng: 76.97075933151562
@@ -10,7 +10,7 @@ function loadPlaces(position) {
         },
         {
                 name: 'Villa 143',  
-                location: {
+            location: {
                 lat: 10.904950618519505, 
                 lng: 76.96988087519571
             },
@@ -173,7 +173,7 @@ window.onload = () => {
                 //alert(place.name);
 
                 // add place name
-                const placeText = document.createElement('a-image');
+                const placeText = document.createElement('a-link');
                 placeText.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                 placeText.setAttribute('title', place.name);
                 placeText.setAttribute('scale', '3 3 3');
