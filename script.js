@@ -178,7 +178,7 @@ window.onload = () => {
                 placeText.setAttribute('title', place.name);
                 placeText.setAttribute('href', 'http://www.djad.in/');
                 placeText.setAttribute('src', '/images/map-marker.png');
-                placeText.setAttribute('scale', '3 3 3');
+                placeText.setAttribute('scale', '5 5 5');
                 
                 placeText.addEventListener('loaded', () => {
                     window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'), { detail: { component: this.el }})
