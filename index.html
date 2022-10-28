@@ -20,16 +20,16 @@
         embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
         <a-camera gps-camera="minDistance: 15;" rotation-reader></a-camera>
-        <div class="Left">
-            <button data-action="">Buy</button>
-        </div>
-        <div class="Right">
-            <BUTTON data-action="">Listen
-                <audio controls>
-                    <source src="horse.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-            </button>
-        </div>
     </a-scene>
+    <div class="Left">
+        <button data-action="">Buy</button>
+    </div>
+    <div class="Right">
+        <button.soundbtn data-action="">
+            <audio controls>
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </button>
+    </div>
 </body>

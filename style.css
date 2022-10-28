@@ -27,6 +27,14 @@ button {
     outline: none;
 }
 
+soundbtn {
+    background:url(./images/speaker.png) no-repeat;
+    cursor:pointer;
+    border:solid;
+    width: 2em;
+    height: 2em;
+}
+
 .instructions {
     position: fixed;
     top: 5%;
