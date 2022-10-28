@@ -3,7 +3,6 @@ function loadPlaces(position) {
     return [
         {
             name: 'Garden',
-            icon: '../images/arch.png',  
             location: {
                 lat: 10.90426806753599, 
                 lng: 76.97075933151562
@@ -11,7 +10,6 @@ function loadPlaces(position) {
         },
         {
                 name: 'Villa 143',  
-                icon: '../images/arch.png',  
                 location: {
                 lat: 10.904950618519505, 
                 lng: 76.96988087519571
@@ -19,7 +17,6 @@ function loadPlaces(position) {
         },
         {
             name: 'Badminton',  
-            icon: '../images/arch.png', 
             location: {
                 lat: 10.903886169093484,  
                 lng: 76.97017997439947
@@ -27,7 +24,6 @@ function loadPlaces(position) {
         },
         {
             name: 'Worker Areas',  
-            icon: '../images/arch.png', 
             location: {
                 lat: 10.905116143702928,  
                 lng: 76.96946650683977
@@ -35,7 +31,6 @@ function loadPlaces(position) {
         },
         {
             name: 'Villa U/C',  
-            icon: '../images/arch.png', 
             location: {
                 lat: 10.90487647024874,  
                 lng: 76.97050183946399
@@ -43,7 +38,6 @@ function loadPlaces(position) {
         },
         {
             name: 'Restaurant',  
-            icon: '/images/arch.png',
             location: {
                 lat: 10.904262799974605,  
                 lng: 76.96969181238491
@@ -51,7 +45,6 @@ function loadPlaces(position) {
         },
         {
             name: 'Shop',  
-            icon: '/images/arch.png', 
             location: {
                 lat: 10.904713789582376, 
                 lng: 76.96997162837401
@@ -59,7 +52,6 @@ function loadPlaces(position) {
         },
         {
             name: 'Security',  
-            icon: '/images/arch.png', 
             location: {
                 lat: 10.90320799072564,  
                 lng: 76.96978879139236
@@ -67,7 +59,6 @@ function loadPlaces(position) {
         },
         {
             name: 'Office',  
-            icon: '/images/arch.png',
             location: {
                 lat: 10.903546410756588,  
                 lng: 76.96963280378976
