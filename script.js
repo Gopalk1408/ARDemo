@@ -72,7 +72,7 @@ function loadPlaces(position) {
             }
         },
         {
-            name: 'Waav',  
+            name: 'Vaav',
             location: {
                         lat: 10.872371922623035, 
                         lng: 77.0020004704595
